@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+    overflow-x: hidden;
+
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    width: 20vw;
+    height:100vh;
+    background-color: black;
+    color:white;
+    text-align: center;
+    
+    
+}
+
+.profinfo > img{
+    max-width:80%;
+    height:30%;
+    border-radius: 50%;
+  
+    margin-top:10%;
+}
+.profinfo > p{
+   text-align: center;
+   font-size: 24px;
+   font-weight: 800;
+   padding-top:10%;
+}
+
+
+.navbar{
+    height:40vh;
+    
+    display: flex;
+    flex-direction: column;
+    color:black;
+}
+.social{
+    width:100%;
+    height:10vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.social > a{
+    margin-left:12%;
+}
+
+.social > a >i{
+    font-size: 30px;
+}
+
+
+.navbar > .navitem{
+    width:100%;
+    height:30%;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    margin-bottom: 4px;
+    
+}
+.main{
+    width:40vw;
+    height:100%;
+    margin-left:20vw;
+    background:white;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 40vw;
+    scrollbar-width:thin;
+    
+}
+
+
+
+.main > *{
+    height:50vh;
+    background-color: none;
+    border:solid 5px rgba(21, 32, 92, 0.699);
+}
+
+
+.skills{
+    width:98%;
+    height:50vh;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(27, 7, 145) rgb(0, 0, 0);
+}
+
+.prog{
+    width: 35%;
+    height:100%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 35%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background:black;
+    margin-left:3px;
+    padding-top: 10%;
+    
+    
+}
+.prog > p{
+  font-size: 24px;
+  font-weight: 800;
+  color:white;
+}
+.career{
+    width:98%;
+    height:50vh;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(27, 7, 145) rgb(0, 0, 0);
+}
+
+.c-out{
+    width: 40%;
+    height:100%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background:black;
+    color:white;
+    margin-left:10%;
+    margin-right:10%;
+    padding-top: 10%;
+    z-index:5;
+    text-align: center;
+     
+}
+
+.cout-img >  img{
+    width:50%;
+    height:50%;
+    border-radius: 50%;
+}
+
+.title-skill{
+    max-width: 30%;
+    height:100%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: black;
+    margin-left:3px;
+    
+    
+    
+}
+.title-skill > img{
+    width: 100%;
+    height:100%;
+    
+    
+}
+
+.circle{
+    position: relative;
+    width:100%;
+    height:25vh;
+    border-radius: 50%;
+    background-color: aqua;
+    display: grid;
+    color:white;
+    place-items: center;
+}
+
+.circle:hover{
+    transform: scale(1.2);
+}
+.circle::before{
+    content: "";
+    position: absolute;
+    width:80%;
+    height:80%;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 50%;
+}
+.percent{
+    position: relative;
+    font-size:24px;
+    font-weight: 800;
+ 
+}
+
+.projects{
+    width:40vw;
+    height:100%;
+    position: absolute;
+    margin-left: 60vw;
+    background: rgb(28, 1, 78);
+    border:solid 5px rgba(21, 32, 92, 0.699);
+    overflow-y: scroll;
+}
+
+.pro-head{
+    width:100%;
+    height:10%;
+    background: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pro-head > h2{
+    margin-top:3%;
+   
+}
+
+.projitem{
+    width:100%;
+    height:30%;
+    background:black;
+    color:white;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+}
+.proimg{
+    width:40%;
+    height:100%;
+}
+.proimg>img{
+    width:100%;
+    height:100%;
+    border-radius:5px;;
+}
+.projitem > hr{
+    transform: rotate(180deg);
+}
+.proj-desc{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.pro-button{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.pro-button > *{
+    margin-top: 5%;
+    margin-right:5%;
+}
+
+
+.info{
+    width:50%;
+    height:30px;
+    border:0;
+    background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+    color:black;
+    background-size: 400%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    
+    
+    
+}
+.info:hover{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate {
+    0%{
+        
+        background-position:10%;
+        
+    }
+    50%{
+        background-position: 100%;
+    }
+    75%{
+        background-position: 300%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+#lb{
+    font-size: 24px;
+    
+}
+
+.logo{
+    display: none;
+}
+
+.moreinfo{
+    z-index: 999;
+    margin-top: 20vh;
+    width:50vw;
+    height:50vh;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    background: yellow;
+    display: none;
+}
+.view{
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .nav{
+        display: none;
+        width:100vw;
+    }
+  
+    .logo{
+        display: block;
+    }
+    .view{
+        display: block;
+    }
+
+    .main{
+        width:100%;
+        height:auto;
+        margin-left: 0;
+        position: relative;
+    }
+    .projects{
+        width:100vw;
+        position: relative;
+        margin-left: 0;
+    }
+    .skills{
+        width:100vw;
+    }
+    .prog{
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+    .career{
+        width:100vw;
+    }
+    .c-out{
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+    .projitem{
+        width:100%;
+        height:50vh;
+        background: red;
+        margin-bottom: 10px;;
+    }
+    
+    .profinfo > img{
+        width:30vmax;
+        height: 30vmax;
+    }
+}
+
+
+
